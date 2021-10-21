@@ -12,6 +12,8 @@
 The Firefox `user.js` file stores user settings. This a convenient way to save your browser customizations and apply them on different machines.
 All settings are based on [arkenfox/user.js](https://github.com/arkenfox/user.js) by default and override settings for sites to **normal work**.
 
+Recommended Firefox `93` version.
+
 ### user.js-overrides/_base-*.js
 
 - Basically settings for security and **usable** in daily use
