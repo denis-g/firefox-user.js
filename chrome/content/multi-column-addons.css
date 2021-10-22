@@ -1,0 +1,56 @@
+/* Personal Firefox settings. Based by arkenfox/user.js      */
+/* by Denis G. (https://github.com/denis-g/firefox-settings) */
+
+
+/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/content/multi_column_addons.css */
+
+@-moz-document url-prefix("chrome://mozapps/content/extensions/aboutaddons.html"), url("about:addons") {
+    @media (min-width: 720px) {
+        #main[current-view="list"] {
+            max-width: 1220px !important;
+            padding-right: var(--main-margin-start);
+        }
+
+        addon-list > section {
+            padding: 1em;
+            display: grid;
+            grid-template-areas: 'hd hd' 'cd cd';
+            grid-auto-columns: 1fr;
+            column-gap: 1em;
+        }
+
+        addon-card .card-contents {
+            width: unset !important;
+            white-space: initial !important;
+        }
+
+        .card-heading-image {
+            max-width: calc(100% + var(--addon-icon-size));
+        }
+
+        section > h2 {
+            grid-area: hd;
+        }
+
+        addon-card {
+            padding-bottom: 0 !important;
+            padding-top: 0 !important;
+            grid-area: auto;
+        }
+
+        addon-card .addon.card {
+            height: calc(100% - (var(--card-padding) * 3));
+        }
+
+        addon-card .addon-description {
+            max-height: calc(20px * 3);
+            scrollbar-width: thin;
+        }
+    }
+
+    @media (min-width: 1220px) {
+        addon-list > section {
+            grid-template-areas: 'hd hd hd' 'cd cd cd';
+        }
+    }
+}

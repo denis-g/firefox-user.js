@@ -35,15 +35,18 @@ Firefox supports advanced customization of its UI with user-defined CSS.
 A `userChrome.css` file affects the browser's UI, and `userContent.css` file affects the browser's content, which is all Firefox-specific pages (`about: `).
 
 ### chrome/userChrome.css
-- Compact list menu
+
 - Auto-hide bookmarks toolbar
-- Close tab button is shown on hover
+- Close tab button shown on hover
+- Compact list menu
+- Floating findbar on top
+- Hide on urlbar 'This time...'
+- Iconized main menu
 - Minimal UI scrollbars
-- Hide on urlbar 'This time, search with' block
 
 ### chrome/userContent.css
 
-- Multi-column addons page
+- Multi-column addons
 
 ---
 
