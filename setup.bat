@@ -46,7 +46,7 @@ rem # copy prefs
 copy /y "%TMP%\user.js" "%FIREFOX_PROFILE%\user.js" >nul
 
 rem # copy styles
-xcopy /i "%root%\chrome\" "%FIREFOX_PROFILE%\chrome\" >nul
+xcopy /i /e "%root%\chrome\" "%FIREFOX_PROFILE%\chrome\" >nul
 
 rem # cleaner
 rd /s /q "%TMP%" >nul 2>&1
