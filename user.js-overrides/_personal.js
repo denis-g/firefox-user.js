@@ -7,11 +7,11 @@ user_pref("_user.js.status-log", "PERSONAL -- error");
 /*** LOCALE ***/
 
 // set preferred language for displaying pages
-user_pref("intl.accept_languages", "en-US, en");
+user_pref("intl.accept_languages", "en-US, en, ru-RU, ru");
 
 // set search region
-user_pref("browser.search.region", "EN");
-user_pref("browser.search.countryCode", "EN");
+user_pref("browser.search.region", "BY");
+user_pref("browser.search.countryCode", "BY");
 
 // enforce fallback text encoding to match Cyrillic
 user_pref("intl.charset.fallback.override", "windows-1251");
