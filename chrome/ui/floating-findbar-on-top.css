@@ -5,7 +5,7 @@
 /* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/floating_findbar_on_top.css */
 
 /* Note that privacy.resistFingerprinting.letterboxing prevents this from working properly */
-findbar{
+findbar {
     -moz-box-ordinal-group: 0;
     margin-bottom: -33px;
     position: relative;
@@ -38,6 +38,13 @@ findbar > .findbar-container {
     -moz-box-direction: reverse;
     border-left-width: 1px;
     border-bottom-left-radius: 4px;
+}
+
+.findbar-find-status {
+    display: -moz-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -moz-box-flex: 1;
 }
 
 .findbar-closebutton {
