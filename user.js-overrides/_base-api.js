@@ -35,9 +35,6 @@ user_pref("media.webspeech.synth.enabled", false);
 // disable Gamepad API to prevent USB device enumeration
 user_pref("dom.gamepad.enabled", false);
 
-// disable WebVR API
-user_pref("dom.vr.enabled", false);
-
 // disable Vibrator API
 user_pref("dom.vibrator.enabled", false);
 
