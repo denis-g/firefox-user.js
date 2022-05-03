@@ -50,5 +50,8 @@ user_pref("startup.homepage_welcome_url", "");
 user_pref("startup.homepage_welcome_url.additional", "");
 user_pref("startup.homepage_override_url", "");
 
+// removed "More from Mozilla" from settings
+user_pref("browser.preferences.moreFromMozilla", false);
+
 
 user_pref("_user.js.status-log", "UI/UX -- success");
