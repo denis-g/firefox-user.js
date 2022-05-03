@@ -12,9 +12,11 @@ user_pref("_user.js.status-log", "API -- error");
 user_pref("dom.webnotifications.enabled", false);
 user_pref("dom.webnotifications.serviceworker.enabled", false);
 
-// disable push
+// disable push notifications
 user_pref("dom.push.connection.enabled", false);
 user_pref("dom.push.serverURL", "");
+user_pref("dom.push.enabled", false);
+user_pref("dom.push.userAgentID", "");
 
 // disable network/browser connection information (WiFi, cellular, etc.)
 user_pref("dom.netinfo.enabled", false);
