@@ -9,10 +9,10 @@
 
 ## 🔹 user.js
 
+![](https://img.shields.io/badge/100-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white&label=Recommended+version)
+
 The Firefox `user.js` file stores user settings. This a convenient way to save your browser customizations and apply them on different machines.
 All settings are based on [arkenfox/user.js](https://github.com/arkenfox/user.js) by default and override settings for sites to **normal work**.
-
-Recommended minimal Firefox `100` version.
 
 ### user.js-overrides/_base-*.js
 
@@ -46,7 +46,7 @@ A `userChrome.css` file affects the browser's UI, and `userContent.css` file aff
 
 ### chrome/userContent.css
 
-- Multi-column addons
+- Multi-column for addons page
 
 ---
 
