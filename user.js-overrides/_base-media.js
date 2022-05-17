@@ -20,9 +20,5 @@ user_pref("webgl.disabled", false);
 // disable MathML
 user_pref("mathml.disabled", true);
 
-// disable Flash
-user_pref("plugin.state.flash", 0);
-user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
-
 
 user_pref("_user.js.status-log", "MEDIA -- success");
