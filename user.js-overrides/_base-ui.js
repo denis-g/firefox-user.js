@@ -52,5 +52,9 @@ user_pref("startup.homepage_override_url", "");
 // removed "More from Mozilla" from settings
 user_pref("browser.preferences.moreFromMozilla", false);
 
+// disable promos
+user_pref("browser.vpn_promo.enabled", false);
+user_pref("browser.promo.focus.enabled", false);
+
 
 user_pref("_user.js.status-log", "UI/UX -- success");
