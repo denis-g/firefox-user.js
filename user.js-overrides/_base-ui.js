@@ -22,9 +22,6 @@ user_pref("clipboard.autocopy", false);
 // enable spellcheck in all text boxes
 user_pref("layout.spellcheckDefault", 2);
 
-// disable Backspace key action
-user_pref("browser.backspace_action", 2);
-
 // disable middle-click auto-scrolling
 user_pref("general.autoScroll", false);
 
@@ -44,13 +41,16 @@ user_pref("browser.bookmarks.showRecentlyBookmarked", false);
 user_pref("browser.download.useDownloadDir", true);
 user_pref("browser.download.forbid_open_with", true);
 
-// disable Welcome page
+// removed "More from Mozilla" from settings
+user_pref("browser.preferences.moreFromMozilla", false);
+
+// showed "Firefox Experiments" on settings
+user_pref("browser.preferences.experimental", true);
+
+// disable welcome page
 user_pref("startup.homepage_welcome_url", "");
 user_pref("startup.homepage_welcome_url.additional", "");
 user_pref("startup.homepage_override_url", "");
-
-// removed "More from Mozilla" from settings
-user_pref("browser.preferences.moreFromMozilla", false);
 
 // disable promos
 user_pref("browser.vpn_promo.enabled", false);
