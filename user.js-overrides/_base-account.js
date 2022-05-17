@@ -9,10 +9,7 @@ user_pref("_user.js.status-log", "FIREFOX ACCOUNT -- error");
 ******************************************************************************/
 
 // disable sync options
-user_pref("services.sync.engine.addresses", false);
-user_pref("services.sync.engine.creditcards", false);
-user_pref("services.sync.engine.passwords", false);
-user_pref("services.sync.engine.prefs", false);
+user_pref("identity.fxaccounts.enabled", false);
 
 
 user_pref("_user.js.status-log", "FIREFOX ACCOUNT -- success");
