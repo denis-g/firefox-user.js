@@ -56,5 +56,9 @@ user_pref("browser.preferences.moreFromMozilla", false);
 user_pref("browser.vpn_promo.enabled", false);
 user_pref("browser.promo.focus.enabled", false);
 
+// disable UI Tour backend so there is no chance that a remote page can use it
+user_pref("browser.uitour.enabled", false);
+user_pref("browser.uitour.url", "");
+
 
 user_pref("_user.js.status-log", "UI/UX -- success");
