@@ -11,9 +11,6 @@ user_pref("_user.js.status-log", "HISTORY -- error");
 // custom history settings
 user_pref("privacy.history.custom", true);
 
-// disable search and form history
-user_pref("browser.formfill.enable", false);
-
 // increase the amount of history that is retained
 user_pref("places.history.expiration.max_pages", 10000000);
 
