@@ -12,26 +12,17 @@ user_pref("_user.js.status-log", "API -- error");
 user_pref("dom.webnotifications.enabled", false);
 user_pref("dom.webnotifications.serviceworker.enabled", false);
 
-// disable push notifications
-user_pref("dom.push.connection.enabled", false);
-user_pref("dom.push.serverURL", "");
+// disable Push API
 user_pref("dom.push.enabled", false);
 user_pref("dom.push.userAgentID", "");
 
-// disable network/browser connection information (WiFi, cellular, etc.)
-user_pref("dom.netinfo.enabled", false);
-
-// disable Web Audio API (required for Unity web player/games)
-user_pref("dom.webaudio.enabled", false);
-
-// disable WebRTC getUserMedia, screen sharing, audio capture, video capture
+// disable getUserMedia, screen sharing, audio capture, video capture
 user_pref("media.navigator.enabled", false);
 user_pref("media.navigator.video.enabled", false);
 user_pref("media.getusermedia.screensharing.enabled", false);
 user_pref("media.getusermedia.audiocapture.enabled", false);
 
 // disable speech recognition, synthesis
-user_pref("media.webspeech.recognition.enable", false);
 user_pref("media.webspeech.synth.enabled", false);
 
 // disable Gamepad API to prevent USB device enumeration
