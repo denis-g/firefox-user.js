@@ -8,7 +8,7 @@ user_pref("_user.js.status-log", "SESSIONS -- error");
  SESSIONS
 ******************************************************************************/
 
-// enable session
+// resume previous session
 user_pref("browser.startup.page", 3);
 
 // disable Firefox to clear items on shutdown
