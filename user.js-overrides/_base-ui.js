@@ -29,13 +29,9 @@ user_pref("general.autoScroll", false);
 user_pref("browser.tabs.closeWindowWithLastTab", false);
 user_pref("browser.tabs.insertAfterCurrent", true);
 
-// disable auto update top sites
+// clear default top sites
+user_pref("browser.topsites.contile.enabled", false);
 user_pref("browser.topsites.useRemoteSetting", false);
-
-// bookmark settings
-user_pref("browser.bookmarks.restore_default_bookmarks", false);
-user_pref("browser.bookmarks.showMobileBookmarks", false);
-user_pref("browser.bookmarks.showRecentlyBookmarked", false);
 
 // download settings
 user_pref("browser.download.useDownloadDir", true);
