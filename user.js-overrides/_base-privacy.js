@@ -30,9 +30,6 @@ user_pref("privacy.firstparty.isolate", false);
 user_pref("privacy.resistFingerprinting", false);
 user_pref("privacy.resistFingerprinting.letterboxing", false);
 
-// enable passive content (such as images) on https pages
-user_pref("security.mixed_content.block_display_content", true);
-
 // disable CRLite
 user_pref("security.remote_settings.intermediates.enabled", false);
 user_pref("security.remote_settings.intermediates.bucket", "");
