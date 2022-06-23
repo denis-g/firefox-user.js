@@ -9,7 +9,7 @@
 
 ## 🔹 user.js
 
-![](https://img.shields.io/badge/100-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white&label=Recommended+version)
+![](https://img.shields.io/badge/101-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white&label=Recommended+version)
 
 The Firefox `user.js` file stores user settings. This a convenient way to save your browser customizations and apply them on different machines.
 All settings are based on [arkenfox/user.js](https://github.com/arkenfox/user.js) by default and override settings for sites to **normal work**.
@@ -32,7 +32,7 @@ All settings are based on [arkenfox/user.js](https://github.com/arkenfox/user.js
 ## 🔹 chrome
 
 Firefox supports advanced customization of its UI with user-defined CSS.
-A `userChrome.css` file affects the browser's UI, and `userContent.css` file affects the browser's content, which is all Firefox-specific pages (`about: `).
+A `userChrome.css` file affects the browser's UI, and `userContent.css` file affects the browser's content, which is all Firefox-specific pages (`about:`).
 
 ### chrome/userChrome.css
 
