@@ -1,4 +1,11 @@
-# Personal Firefox settings
+# Firefox user.js
+
+<div style="text-align: center;">
+  <p><img src="https://github.com/denis-g/firefox-user.js/blob/master/assets/firefox.svg" alt="Mozilla Firefox" style="max-width: 50%;" /></p>
+  <p><img src="https://img.shields.io/badge/103-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white&label=Recommended+version" alt="Recommended version" /></p>
+</div>
+
+---
 
 - [user.js](#-userjs)
 - [chrome](#-chrome)
@@ -7,9 +14,9 @@
 - [Must-have Addons](#-must-have-addons)
 - [References](#-references)
 
-## 🔹 user.js
+---
 
-![](https://img.shields.io/badge/102-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white&label=Recommended+version)
+## 🔹 user.js
 
 The Firefox `user.js` file stores user settings. This a convenient way to save your browser customizations and apply them on different machines.
 All settings are based on [arkenfox/user.js](https://github.com/arkenfox/user.js) by default and override settings for sites to **normal work**.
@@ -46,6 +53,7 @@ A `userChrome.css` file affects the browser's UI, and `userContent.css` file aff
 
 ### chrome/userContent.css
 
+- Theme-based styles for newtab page
 - Multi-column for addons page
 
 ---
@@ -151,3 +159,7 @@ FIREFOX_PROFILE="C:\Users\denis-g\AppData\Roaming\Mozilla\Firefox\Profiles\dfk39
 - [pyllyukko/user.js](https://github.com/pyllyukko/user.js)
 - [LibreWolf](https://gitlab.com/librewolf-community)
 - [firefox-csshacks](https://github.com/MrOtherGuy/firefox-csshacks)
+
+---
+
+<sub>Mozilla Firefox logo created by [Mozilla Foundation](https://mozilla.design/). All rights reserved.</sub>

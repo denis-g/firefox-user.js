@@ -1,0 +1,35 @@
+/* Personal Firefox settings. Based by arkenfox/user.js      */
+/* by Denis G. (https://github.com/denis-g/firefox-settings) */
+
+
+@-moz-document url("about:newtab") {
+    body {
+        --newtab-text-primary-color: var(--lwt-sidebar-text-color) !important;
+        --newtab-background-color: var(--lwt-sidebar-background-color) !important;
+        --newtab-background-color-secondary: color-mix(in srgb, var(--newtab-background-color) 80%, #000) !important;
+    }
+
+    .top-site-outer .tile {
+        width: 64px !important;
+        height: 64px !important;
+        background-color: transparent !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+    }
+
+    .top-site-outer .top-site-icon {
+        background-color: transparent !important;
+    }
+
+    .top-site-outer .tile .icon-wrapper {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .top-site-outer .default-icon,
+    .top-site-outer .search-topsite {
+        width: 100% !important;
+        height: 100% !important;
+        background-size: cover !important;
+    }
+}
