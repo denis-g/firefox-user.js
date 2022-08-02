@@ -1,7 +1,7 @@
 # Firefox user.js
 
-<div style="text-align: center;">
-  <p><img src="https://github.com/denis-g/firefox-user.js/blob/master/assets/firefox.svg" alt="Mozilla Firefox" style="max-width: 50%;" /></p>
+<div align="center">
+  <p><img src="https://github.com/denis-g/firefox-user.js/blob/master/assets/firefox.svg" alt="Mozilla Firefox" style="width: 40%;" /></p>
   <p><img src="https://img.shields.io/badge/103-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white&label=Recommended+version" alt="Recommended version" /></p>
 </div>
 
