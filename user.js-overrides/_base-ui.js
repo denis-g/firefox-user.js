@@ -29,6 +29,9 @@ user_pref("general.autoScroll", false);
 user_pref("browser.tabs.closeWindowWithLastTab", false);
 user_pref("browser.tabs.insertAfterCurrent", true);
 
+// disable "Firefox View" tab
+user_pref("browser.tabs.firefox-view", false);
+
 // clear default top sites
 user_pref("browser.topsites.contile.enabled", false);
 user_pref("browser.topsites.useRemoteSetting", false);
@@ -51,6 +54,7 @@ user_pref("startup.homepage_override_url", "");
 // disable promos
 user_pref("browser.vpn_promo.enabled", false);
 user_pref("browser.promo.focus.enabled", false);
+user_pref("browser.promo.pin.enabled", false);
 
 // disable UI Tour backend so there is no chance that a remote page can use it
 user_pref("browser.uitour.enabled", false);
