@@ -104,11 +104,11 @@ sh setup.sh
 
 ### Windows
 
-1. Use GIT as above, download [zip-archive](https://github.com/denis-g/firefox-settings/archive/refs/heads/master.zip), or execute commands on [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.1):
+1. Use GIT as above, download [zip-archive](https://github.com/denis-g/firefox-user.js/archive/refs/heads/master.zip), or execute commands on [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.1):
 
 ```powershell
 # download this repo
-Invoke-WebRequest "https://github.com/denis-g/firefox-settings/archive/refs/heads/master.zip" -OutFile "$HOME\Downloads\firefox-settings.zip"
+Invoke-WebRequest "https://github.com/denis-g/firefox-user.js/archive/refs/heads/master.zip" -OutFile "$HOME\Downloads\firefox-settings.zip"
 Expand-Archive "$HOME\Downloads\firefox-settings.zip" -DestinationPath "$HOME\Downloads\" -Force
 # open directory
 explorer "$HOME\Downloads\firefox-settings-master"
