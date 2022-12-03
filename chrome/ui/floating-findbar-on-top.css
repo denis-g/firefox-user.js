@@ -30,7 +30,7 @@ findbar > .findbar-container,
 findbar > .close-icon {
     border: 1px solid var(--chrome-content-separator-color);
     border-width: 0 0 1px 0px;
-    background: var(--uc-light-bkgnd-color,var(--toolbar-bgcolor)) !important;
+    background: var(--uc-light-bkgnd-color, var(--toolbar-bgcolor)) !important;
     pointer-events: auto;
 }
 
@@ -38,6 +38,7 @@ findbar > .findbar-container {
     -moz-box-direction: reverse;
     border-left-width: 1px;
     border-bottom-left-radius: 4px;
+    height: initial !important;
 }
 
 .findbar-find-status {
@@ -51,6 +52,7 @@ findbar > .findbar-container {
     margin: 0 !important;
     border-radius: 0 !important;
     padding: 5px !important;
+    width: initial !important;
 }
 
 .findbar-closebutton > image {
@@ -72,8 +74,10 @@ findbar::before {
     -moz-box-flex: 100;
 }
 
-/* Move findbar so it isn't over the scrollbar
-Delete if you want findbar to begin from right window edge */
+/*
+Move findbar so it isn't over the scrollbar
+Delete if you want findbar to begin from right window edge
+*/
 findbar {
     margin-right: 16px;
     border-right: 1px solid var(--chrome-content-separator-color);

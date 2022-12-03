@@ -51,14 +51,10 @@ user_pref("startup.homepage_welcome_url", "");
 user_pref("startup.homepage_welcome_url.additional", "");
 user_pref("startup.homepage_override_url", "");
 
-// disable promos
+// disable page promos
 user_pref("browser.vpn_promo.enabled", false);
 user_pref("browser.promo.focus.enabled", false);
 user_pref("browser.promo.pin.enabled", false);
-
-// disable UI Tour backend so there is no chance that a remote page can use it
-user_pref("browser.uitour.enabled", false);
-user_pref("browser.uitour.url", "");
 
 
 user_pref("_user.js.status-log", "UI/UX -- success");

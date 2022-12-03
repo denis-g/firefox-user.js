@@ -2,7 +2,7 @@
 
 <div align="center">
   <p><img src="https://github.com/denis-g/firefox-user.js/blob/master/assets/firefox.svg" alt="Mozilla Firefox" style="width: 40%;" /></p>
-  <p><img src="https://img.shields.io/badge/105-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white&label=Recommended+version" alt="Recommended version" /></p>
+  <p><img src="https://img.shields.io/badge/107-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white&label=Minimal+version" alt="Recommended version" /></p>
 </div>
 
 ---
