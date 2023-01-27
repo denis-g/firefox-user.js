@@ -1,5 +1,5 @@
-/* Personal Firefox settings. Based by arkenfox/user.js      */
-/* by Denis G. (https://github.com/denis-g/firefox-settings) */
+/* Personal Firefox settings. Based by arkenfox/user.js     */
+/* by Denis G. (https://github.com/denis-g/firefox-user.js) */
 
 user_pref("_user.js.status-log", "SEARCH -- error");
 

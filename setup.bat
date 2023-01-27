@@ -2,7 +2,7 @@
 setlocal disabledelayedexpansion
 
 rem # Personal Firefox settings. Based by arkenfox/user.js
-rem # by Denis G. (https://github.com/denis-g/firefox-settings)
+rem # by Denis G. (https://github.com/denis-g/firefox-user.js)
 
 rem # config
 title Personal Firefox settings

@@ -2,7 +2,7 @@
 export LC_ALL=en_US.UTF-8
 
 # Personal Firefox settings. Based by arkenfox/user.js
-# by Denis G. (https://github.com/denis-g/firefox-settings)
+# by Denis G. (https://github.com/denis-g/firefox-user.js)
 
 # config
 TMP="./temp"
