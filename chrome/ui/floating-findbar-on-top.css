@@ -29,16 +29,16 @@ findbar[hidden] {
 findbar > .findbar-container,
 findbar > .close-icon {
     border: 1px solid var(--chrome-content-separator-color);
-    border-width: 0 0 1px 0px;
+    border-width: 0 0 1px 0;
     background: var(--uc-light-bkgnd-color, var(--toolbar-bgcolor)) !important;
     pointer-events: auto;
 }
 
 findbar > .findbar-container {
-    -moz-box-direction: reverse;
-    border-left-width: 1px;
-    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-right-width: 1px;
     height: initial !important;
+    margin-inline: 0 !important;
 }
 
 .findbar-find-status {
@@ -53,6 +53,7 @@ findbar > .findbar-container {
     border-radius: 0 !important;
     padding: 5px !important;
     width: initial !important;
+    -moz-box-ordinal-group: 0;
 }
 
 .findbar-closebutton > image {
@@ -68,17 +69,30 @@ findbar > .findbar-container > hbox {
     margin: 0 5px;
 }
 
-findbar::before {
+findbar::after {
     content: '';
     display: -moz-box;
     -moz-box-flex: 100;
 }
 
-/*
-Move findbar so it isn't over the scrollbar
-Delete if you want findbar to begin from right window edge
-*/
-findbar {
-    margin-right: 16px;
-    border-right: 1px solid var(--chrome-content-separator-color);
+@supports -moz-bool-pref('userchrome.floating-findbar-on-right.enabled') {
+    findbar {
+        -moz-box-direction: reverse;
+    }
+
+    findbar > .findbar-container {
+        -moz-box-direction: reverse;
+        border-inline-width: 1px 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 4px;
+    }
+
+    /*
+    Move findbar so it isn't over the scrollbar
+    Delete if you want findbar to begin from right window edge
+    */
+    findbar {
+        margin-right: 16px;
+        border-right: 1px solid var(--chrome-content-separator-color);
+    }
 }
