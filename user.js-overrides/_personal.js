@@ -25,10 +25,10 @@ user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 user_pref("browser.newtabpage.enabled", true);
 user_pref("browser.newtab.preload", true);
 user_pref("browser.startup.homepage", "about:home");
-user_pref("browser.newtabpage.activity-stream.topSitesRows", 2);
+user_pref("browser.newtabpage.activity-stream.topSitesRows", 3);
 
 // bookmarks settings
-user_pref("browser.toolbars.bookmarks.visibility", "always"); // enhanced with userChrome.css
+user_pref("browser.toolbars.bookmarks.visibility", "always"); // for correct userChrome.css
 
 // download settings
 //user_pref("browser.download.dir", "");     // set your directory

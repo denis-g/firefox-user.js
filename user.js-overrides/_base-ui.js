@@ -10,7 +10,6 @@ user_pref("_user.js.status-log", "UI/UX -- error");
 
 // disable warnings
 user_pref("browser.warnOnQuitShortcut", false);
-user_pref("browser.tabs.warnOnClose", false);
 user_pref("browser.tabs.warnOnCloseOtherTabs", false);
 user_pref("browser.tabs.warnOnOpen", false);
 user_pref("full-screen-api.warning.delay", 0);

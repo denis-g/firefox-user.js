@@ -8,11 +8,6 @@ user_pref("_user.js.status-log", "DEVTOOLS -- error");
  DEVTOOLS
 ******************************************************************************/
 
-// disable WebIDE
-user_pref("devtools.webide.enabled", false);
-user_pref("devtools.webide.autoinstallADBHelper", false);
-user_pref("devtools.webide.autoinstallFxdtAdapters", false);
-
 // disable devtools news
 user_pref("devtools.whatsnew.enabled", false);
 user_pref("devtools.whatsnew.feature-enabled", false);

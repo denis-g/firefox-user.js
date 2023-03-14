@@ -9,5 +9,6 @@
 }
 
 .tabbrowser-tab:not([pinned]):hover .tab-close-button {
-    display:-moz-box !important;
+    display: flex !important;
+    align-items: center;
 }

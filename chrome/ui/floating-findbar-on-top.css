@@ -6,7 +6,8 @@
 
 /* Note that privacy.resistFingerprinting.letterboxing prevents this from working properly */
 findbar {
-    -moz-box-ordinal-group: 0;
+    -moz-box-ordinal-group: 0; /* Fx <112 compatibility */
+    order: -1;
     margin-bottom: -33px;
     position: relative;
     border-top: none !important;
@@ -42,10 +43,11 @@ findbar > .findbar-container {
 }
 
 .findbar-find-status {
-    display: -moz-box;
+    display: flex;
     overflow: hidden;
     text-overflow: ellipsis;
-    -moz-box-flex: 1;
+    -moz-box-flex: 1; /* Fx <112 compatibility */
+    flex-grow: 1;
 }
 
 .findbar-closebutton {
@@ -53,7 +55,8 @@ findbar > .findbar-container {
     border-radius: 0 !important;
     padding: 5px !important;
     width: initial !important;
-    -moz-box-ordinal-group: 0;
+    -moz-box-ordinal-group: 0; /* Fx <112 compatibility */
+    order: -1;
 }
 
 .findbar-closebutton > image {
@@ -71,17 +74,20 @@ findbar > .findbar-container > hbox {
 
 findbar::after {
     content: '';
-    display: -moz-box;
-    -moz-box-flex: 100;
+    display: flex;
+    -moz-box-flex: 100; /* Fx <112 compatibility */
+    flex-grow: 100;
 }
 
 @supports -moz-bool-pref('userchrome.floating-findbar-on-right.enabled') {
     findbar {
-        -moz-box-direction: reverse;
+        -moz-box-direction: reverse; /* Fx <112 compatibility */
+        flex-direction: row-reverse;
     }
 
     findbar > .findbar-container {
-        -moz-box-direction: reverse;
+        -moz-box-direction: reverse; /* Fx <112 compatibility */
+        flex-direction: row-reverse;
         border-inline-width: 1px 0;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 4px;
@@ -91,6 +97,7 @@ findbar::after {
     Move findbar so it isn't over the scrollbar
     Delete if you want findbar to begin from right window edge
     */
+
     findbar {
         margin-right: 16px;
         border-right: 1px solid var(--chrome-content-separator-color);

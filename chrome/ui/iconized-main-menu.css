@@ -30,21 +30,22 @@
 
 /* Use account-button icon for signed in sync item */
 #appMenu-fxa-status2[fxastatus] > toolbarbutton::before {
+    display: flex;
     content: '';
-    display: -moz-box;
     width: 16px;
     height: 16px;
-    background-image: var(--avatar-image-url)
+    background-image: var(--avatar-image-url);
 }
 
 /* Add somewhat hacky separator to zoom controls so it looks consistent */
 #appMenu-protonMainView > .panel-subview-body::after {
     content: '';
-    display: -moz-box;
+    display: flex;
     border-bottom: 1px solid var(--panel-separator-color);
     margin: var(--panel-separator-margin);
 }
 
 #appMenu-find-button2 ~ * {
-    -moz-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2; /* Fx < 112 compatibility */
+    order: 2;
 }
