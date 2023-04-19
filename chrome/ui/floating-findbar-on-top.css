@@ -4,7 +4,6 @@
 
 /* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/floating_findbar_on_top.css */
 
-/* Note that privacy.resistFingerprinting.letterboxing prevents this from working properly */
 findbar {
     -moz-box-ordinal-group: 0; /* Fx <112 compatibility */
     order: -1;
@@ -16,6 +15,7 @@ findbar {
     background: none !important;
     pointer-events: none;
     z-index: 1;
+    white-space: nowrap;
 }
 
 .findbar-container > .findbar-find-fast {
@@ -40,9 +40,10 @@ findbar > .findbar-container {
     border-right-width: 1px;
     height: initial !important;
     margin-inline: 0 !important;
+    overflow-inline: visible !important;
 }
 
-.findbar-find-status {
+.findbar-find-status{
     display: flex;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -79,7 +80,7 @@ findbar::after {
     flex-grow: 100;
 }
 
-@supports -moz-bool-pref('userchrome.floating-findbar-on-right.enabled') {
+@supports -moz-bool-pref("userchrome.floating-findbar-on-right.enabled") {
     findbar {
         -moz-box-direction: reverse; /* Fx <112 compatibility */
         flex-direction: row-reverse;
@@ -92,11 +93,6 @@ findbar::after {
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 4px;
     }
-
-    /*
-    Move findbar so it isn't over the scrollbar
-    Delete if you want findbar to begin from right window edge
-    */
 
     findbar {
         margin-right: 16px;
