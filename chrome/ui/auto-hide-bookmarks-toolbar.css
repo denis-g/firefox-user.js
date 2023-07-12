@@ -1,8 +1,10 @@
-/* Personal Firefox settings. Based by arkenfox/user.js     */
-/* by Denis G. (https://github.com/denis-g/firefox-user.js) */
-
-
-/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/autohide_bookmarks_toolbar.css */
+/******************************************************************************
+ * Firefox user.js by Denis G.
+ * https://github.com/denis-g/firefox-user.js
+ *
+ * Autohide Bookmarks Toolbar
+ * https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/autohide_bookmarks_toolbar.css
+ *****************************************************************************/
 
 #PersonalToolbar {
     --uc-bm-height: 20px; /* Might need to adjust if the toolbar has other buttons */

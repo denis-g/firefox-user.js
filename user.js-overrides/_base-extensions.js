@@ -1,16 +1,18 @@
-/* Personal Firefox settings. Based by arkenfox/user.js     */
-/* by Denis G. (https://github.com/denis-g/firefox-user.js) */
-
-user_pref("_user.js.status-log", "EXTENSIONS -- error");
-
-
 /******************************************************************************
- EXTENSIONS
-******************************************************************************/
+ * Firefox user.js by Denis G.
+ * https://github.com/denis-g/firefox-user.js
+ *
+ * Built-in Extensions
+ *****************************************************************************/
 
-// disable system extensions
+// status for settings apply
+user_pref("_user.js.status-log", "_base-extensions.js -- error");
+
+
+// disable extensions
 user_pref("extensions.pocket.enabled", false);
 user_pref("extensions.screenshots.disabled", true);
 
 
-user_pref("_user.js.status-log", "EXTENSIONS -- success");
+// status for settings apply
+user_pref("_user.js.status-log", "_base-extensions.js -- success");

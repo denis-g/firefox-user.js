@@ -1,12 +1,13 @@
-/* Personal Firefox settings. Based by arkenfox/user.js     */
-/* by Denis G. (https://github.com/denis-g/firefox-user.js) */
-
-user_pref("_user.js.status-log", "API -- error");
-
-
 /******************************************************************************
- API
-******************************************************************************/
+ * Firefox user.js by Denis G.
+ * https://github.com/denis-g/firefox-user.js
+ *
+ * Web API's
+ *****************************************************************************/
+
+// status for settings apply
+user_pref("_user.js.status-log", "_base-api.js -- error");
+
 
 // disable Web Notifications
 user_pref("dom.webnotifications.enabled", false);
@@ -38,4 +39,5 @@ user_pref("dom.w3c_touch_events.enabled", 0);
 user_pref("media.ondevicechange.enabled", false);
 
 
-user_pref("_user.js.status-log", "API -- success");
+// status for settings apply
+user_pref("_user.js.status-log", "_base-api.js -- success");

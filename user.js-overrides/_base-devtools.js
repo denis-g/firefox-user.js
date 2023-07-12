@@ -1,12 +1,13 @@
-/* Personal Firefox settings. Based by arkenfox/user.js     */
-/* by Denis G. (https://github.com/denis-g/firefox-user.js) */
-
-user_pref("_user.js.status-log", "DEVTOOLS -- error");
-
-
 /******************************************************************************
- DEVTOOLS
-******************************************************************************/
+ * Firefox user.js by Denis G.
+ * https://github.com/denis-g/firefox-user.js
+ *
+ * DevTools
+ *****************************************************************************/
+
+// status for settings apply
+user_pref("_user.js.status-log", "_base-devtools.js -- error");
+
 
 // disable devtools news
 user_pref("devtools.whatsnew.enabled", false);
@@ -22,4 +23,5 @@ user_pref("devtools.inspector.showUserAgentStyles", true);
 user_pref("devtools.editor.tabsize", 4);
 
 
-user_pref("_user.js.status-log", "DEVTOOLS -- success");
+// status for settings apply
+user_pref("_user.js.status-log", "_base-devtools.js -- success");

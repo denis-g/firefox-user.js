@@ -1,12 +1,13 @@
-/* Personal Firefox settings. Based by arkenfox/user.js     */
-/* by Denis G. (https://github.com/denis-g/firefox-user.js) */
-
-user_pref("_user.js.status-log", "SEARCH -- error");
-
-
 /******************************************************************************
- SEARCH
-******************************************************************************/
+ * Firefox user.js by Denis G.
+ * https://github.com/denis-g/firefox-user.js
+ *
+ * Search
+ *****************************************************************************/
+
+// status for settings apply
+user_pref("_user.js.status-log", "_base-search.js -- error");
+
 
 // enable location bar using search
 user_pref("keyword.enabled", true);
@@ -22,4 +23,5 @@ user_pref("browser.urlbar.suggest.searches", true);
 user_pref("findbar.highlightAll", true);
 
 
-user_pref("_user.js.status-log", "SEARCH -- success");
+// status for settings apply
+user_pref("_user.js.status-log", "_base-search.js -- success");

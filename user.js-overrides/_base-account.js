@@ -1,15 +1,17 @@
-/* Personal Firefox settings. Based by arkenfox/user.js     */
-/* by Denis G. (https://github.com/denis-g/firefox-user.js) */
-
-user_pref("_user.js.status-log", "FIREFOX ACCOUNT -- error");
-
-
 /******************************************************************************
- FIREFOX ACCOUNT
-******************************************************************************/
+ * Firefox user.js by Denis G.
+ * https://github.com/denis-g/firefox-user.js
+ *
+ * Firefox Account
+ *****************************************************************************/
+
+// status for settings apply
+user_pref("_user.js.status-log", "_base-account.js -- error");
+
 
 // disable sync options
 user_pref("identity.fxaccounts.enabled", false);
 
 
-user_pref("_user.js.status-log", "FIREFOX ACCOUNT -- success");
+// status for settings apply
+user_pref("_user.js.status-log", "_base-account.js -- success");

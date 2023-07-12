@@ -1,8 +1,10 @@
-/* Personal Firefox settings. Based by arkenfox/user.js     */
-/* by Denis G. (https://github.com/denis-g/firefox-user.js) */
-
-
-/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/floating_findbar_on_top.css */
+/******************************************************************************
+ * Firefox user.js by Denis G.
+ * https://github.com/denis-g/firefox-user.js
+ *
+ * Floating Findbar On Top
+ * https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/floating_findbar_on_top.css
+ *****************************************************************************/
 
 findbar {
     -moz-box-ordinal-group: 0; /* Fx <112 compatibility */
@@ -31,7 +33,8 @@ findbar > .findbar-container,
 findbar > .close-icon {
     border: 1px solid var(--chrome-content-separator-color);
     border-width: 0 0 1px 0;
-    background: var(--uc-light-bkgnd-color, var(--toolbar-bgcolor)) !important;
+    background-color: var(--lwt-accent-color) !important;
+    background-image: linear-gradient(var(--toolbar-bgcolor), var(--toolbar-bgcolor)), var(--lwt-header-image, none);
     pointer-events: auto;
 }
 

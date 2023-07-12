@@ -1,12 +1,13 @@
-/* Personal Firefox settings. Based by arkenfox/user.js     */
-/* by Denis G. (https://github.com/denis-g/firefox-user.js) */
-
-user_pref("_user.js.status-log", "MEDIA -- error");
-
-
 /******************************************************************************
- MEDIA
-******************************************************************************/
+ * Firefox user.js by Denis G.
+ * https://github.com/denis-g/firefox-user.js
+ *
+ * Media Content
+ *****************************************************************************/
+
+// status for settings apply
+user_pref("_user.js.status-log", "_base-media.js -- error");
+
 
 // enable DRM (Netflix, Spotify, etc)
 user_pref("media.eme.enabled", true);
@@ -21,4 +22,5 @@ user_pref("webgl.disabled", false);
 user_pref("mathml.disabled", true);
 
 
-user_pref("_user.js.status-log", "MEDIA -- success");
+// status for settings apply
+user_pref("_user.js.status-log", "_base-media.js -- success");

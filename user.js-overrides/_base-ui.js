@@ -1,12 +1,13 @@
-/* Personal Firefox settings. Based by arkenfox/user.js     */
-/* by Denis G. (https://github.com/denis-g/firefox-user.js) */
-
-user_pref("_user.js.status-log", "UI/UX -- error");
-
-
 /******************************************************************************
- UI/UX
-******************************************************************************/
+ * Firefox user.js by Denis G.
+ * https://github.com/denis-g/firefox-user.js
+ *
+ * UI and UX
+ *****************************************************************************/
+
+// status for settings apply
+user_pref("_user.js.status-log", "_base-ui.js -- error");
+
 
 // disable warnings
 user_pref("browser.warnOnQuitShortcut", false);
@@ -56,4 +57,5 @@ user_pref("browser.promo.focus.enabled", false);
 user_pref("browser.promo.pin.enabled", false);
 
 
-user_pref("_user.js.status-log", "UI/UX -- success");
+// status for settings apply
+user_pref("_user.js.status-log", "_base-ui.js -- success");
