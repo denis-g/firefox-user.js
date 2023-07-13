@@ -9,6 +9,9 @@
 user_pref("_user.js.status-log", "_base-api.js -- error");
 
 
+// enable prioritized Task Scheduling
+user_pref("dom.enable_web_task_scheduling", true);
+
 // disable Web Notifications
 user_pref("dom.webnotifications.enabled", false);
 user_pref("dom.webnotifications.serviceworker.enabled", false);
@@ -17,19 +20,9 @@ user_pref("dom.webnotifications.serviceworker.enabled", false);
 user_pref("dom.push.enabled", false);
 user_pref("dom.push.userAgentID", "");
 
-// disable getUserMedia, screen sharing, audio capture, video capture
-user_pref("media.navigator.enabled", false);
-user_pref("media.navigator.video.enabled", false);
-user_pref("media.getusermedia.screensharing.enabled", false);
-user_pref("media.getusermedia.audiocapture.enabled", false);
-
-// disable speech recognition, synthesis
-user_pref("media.webspeech.synth.enabled", false);
-
-// disable Gamepad API to prevent USB device enumeration
+// disable many API's
 user_pref("dom.gamepad.enabled", false);
-
-// disable Sensor API
+user_pref("dom.battery.enabled", false);
 user_pref("device.sensors.enabled", false);
 
 // disable touch events

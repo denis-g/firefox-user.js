@@ -12,9 +12,6 @@ user_pref("_user.js.status-log", "_base-media.js -- error");
 // enable DRM (Netflix, Spotify, etc)
 user_pref("media.eme.enabled", true);
 
-// enable autoplay for media (YouTube, Spotify, etc)
-user_pref("media.autoplay.blocking_policy", 0);
-
 // enable WebGL (iCloud, etc)
 user_pref("webgl.disabled", false);
 

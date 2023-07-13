@@ -10,11 +10,20 @@ user_pref("_user.js.status-log", "_base-ui.js -- error");
 
 
 // disable warnings
-user_pref("browser.warnOnQuitShortcut", false);
 user_pref("browser.tabs.warnOnCloseOtherTabs", false);
 user_pref("browser.tabs.warnOnOpen", false);
-user_pref("full-screen-api.warning.delay", 0);
+
+// disable Firefox from asking to set as the default browser
+user_pref("browser.shell.checkDefaultBrowser", false);
+
+// disable fullscreen delay and notices
+user_pref("full-screen-api.transition-duration.enter", "0 0");
+user_pref("full-screen-api.transition-duration.leave", "0 0");
+user_pref("full-screen-api.warning.delay", -1);
 user_pref("full-screen-api.warning.timeout", 0);
+
+// display tab dropdown when there are too many tabs
+user_pref("browser.tabs.tabmanager.enabled", false);
 
 // disable autocopy
 user_pref("clipboard.autocopy", false);
@@ -40,13 +49,14 @@ user_pref("browser.topsites.useRemoteSetting", false);
 user_pref("browser.download.useDownloadDir", true);
 user_pref("browser.download.forbid_open_with", true);
 
-// removed "More from Mozilla" from settings
+// hide "More from Mozilla" from settings
 user_pref("browser.preferences.moreFromMozilla", false);
 
 // showed "Firefox Experiments" on settings
 user_pref("browser.preferences.experimental", true);
 
 // disable welcome page
+user_pref("browser.aboutwelcome.enabled", false);
 user_pref("startup.homepage_welcome_url", "");
 user_pref("startup.homepage_welcome_url.additional", "");
 user_pref("startup.homepage_override_url", "");

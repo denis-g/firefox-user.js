@@ -19,9 +19,13 @@ user_pref("browser.search.region", "EN");
 user_pref("intl.charset.fallback.override", "windows-1251");
 
 // enable "Dark Mode"
+user_pref("layout.css.prefers-color-scheme.content-override", 0);
 user_pref("ui.systemUsesDarkTheme", 1);
 user_pref("devtools.theme", "dark");
 user_pref("reader.color_scheme", "dark");
+
+// fix icons for extensions on Dark Mode
+user_pref("svg.context-properties.content.enabled", true);
 
 // default newtab page
 user_pref("browser.newtabpage.enabled", true);
@@ -41,7 +45,7 @@ user_pref("reader.content_width", 7);
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 
 // bookmarks settings
-// for correct `chrome/ui/floating-findbar-on-top.css`
+// for correct styles `chrome/ui/floating-findbar-on-top.css`
 user_pref("browser.toolbars.bookmarks.visibility", "always");
 
 

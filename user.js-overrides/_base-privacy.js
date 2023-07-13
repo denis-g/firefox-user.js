@@ -25,6 +25,13 @@ user_pref("security.ssl.require_safe_negotiation", false);
 user_pref("privacy.resistFingerprinting", false);
 user_pref("privacy.resistFingerprinting.letterboxing", false);
 
+// disable VPN promotions
+user_pref("browser.privatebrowsing.vpnpromourl", "");
+
+// Cookie Banner handling
+user_pref("cookiebanners.service.mode", 2);
+user_pref("cookiebanners.service.mode.privateBrowsing", 2);
+
 
 // status for settings apply
 user_pref("_user.js.status-log", "_base-privacy.js -- success");
