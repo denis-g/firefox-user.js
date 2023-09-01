@@ -12,13 +12,7 @@ user_pref("_user.js.status-log", "_personal.js -- error");
 // set preferred language for displaying pages
 user_pref("intl.accept_languages", "en-US, en, ru-RU, ru");
 
-// set search region
-user_pref("browser.search.region", "EN");
-
-// enforce fallback text encoding to match Cyrillic
-user_pref("intl.charset.fallback.override", "windows-1251");
-
-// enable "Dark Mode"
+// force "Dark Mode"
 user_pref("layout.css.prefers-color-scheme.content-override", 0);
 user_pref("ui.systemUsesDarkTheme", 1);
 user_pref("devtools.theme", "dark");
@@ -29,7 +23,6 @@ user_pref("svg.context-properties.content.enabled", true);
 
 // default newtab page
 user_pref("browser.newtabpage.enabled", true);
-user_pref("browser.newtab.preload", true);
 user_pref("browser.startup.homepage", "about:home");
 user_pref("browser.newtabpage.activity-stream.topSitesRows", 3);
 

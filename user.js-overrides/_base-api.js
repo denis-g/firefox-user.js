@@ -22,7 +22,6 @@ user_pref("dom.push.userAgentID", "");
 
 // disable many API's
 user_pref("dom.gamepad.enabled", false);
-user_pref("dom.battery.enabled", false);
 user_pref("device.sensors.enabled", false);
 
 // disable touch events

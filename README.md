@@ -1,7 +1,10 @@
-# Firefox user.js
+# Firefox user.js 
 
 <div align="center">
   <p><img src="https://github.com/denis-g/firefox-user.js/blob/master/assets/firefox.svg" alt="Mozilla Firefox" style="width: 40%;" /></p>
+  <p>
+    <img src="https://img.shields.io/badge/minimal_version-115.1-html.svg?style=flat-square&logo=firefoxbrowser&logoColor=FF7139&color=333&longCache=true" alt="Minimal version" />
+  </p>
 </div>
 
 ---
@@ -143,6 +146,7 @@ FIREFOX_PROFILE="C:\Users\denis-g\AppData\Roaming\Mozilla\Firefox\Profiles\dfk39
 
 - [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/) (enable all Privacy settings and lists)
 - [Facebook Container](https://addons.mozilla.org/firefox/addon/facebook-container/)
+- [Google Container](https://addons.mozilla.org/firefox/addon/google-container/)
 - [CSS Exfil Protection](https://addons.mozilla.org/firefox/addon/css-exfil-protection/)
 
 ---
@@ -152,6 +156,7 @@ FIREFOX_PROFILE="C:\Users\denis-g\AppData\Roaming\Mozilla\Firefox\Profiles\dfk39
 - [arkenfox/user.js](https://github.com/arkenfox/user.js)
 - [Betterfox](https://github.com/yokoffing/Betterfox)
 - [firefox-csshacks](https://github.com/MrOtherGuy/firefox-csshacks)
+- [firefox.js](https://searchfox.org/mozilla-central/source/browser/app/profile/firefox.js)
 
 ---
 
