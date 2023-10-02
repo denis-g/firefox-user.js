@@ -6,8 +6,7 @@
  * https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/floating_findbar_on_top.css
  *****************************************************************************/
 
-findbar {
-    -moz-box-ordinal-group: 0; /* Fx <112 compatibility */
+findbar{
     order: -1;
     margin-bottom: -33px;
     position: relative;
@@ -46,11 +45,10 @@ findbar > .findbar-container {
     overflow-inline: visible !important;
 }
 
-.findbar-find-status{
+.findbar-find-status {
     display: flex;
     overflow: hidden;
     text-overflow: ellipsis;
-    -moz-box-flex: 1; /* Fx <112 compatibility */
     flex-grow: 1;
 }
 
@@ -59,7 +57,6 @@ findbar > .findbar-container {
     border-radius: 0 !important;
     padding: 5px !important;
     width: initial !important;
-    -moz-box-ordinal-group: 0; /* Fx <112 compatibility */
     order: -1;
 }
 
@@ -79,24 +76,25 @@ findbar > .findbar-container > hbox {
 findbar::after {
     content: '';
     display: flex;
-    -moz-box-flex: 100; /* Fx <112 compatibility */
     flex-grow: 100;
 }
 
 @supports -moz-bool-pref("userchrome.floating-findbar-on-right.enabled") {
     findbar {
-        -moz-box-direction: reverse; /* Fx <112 compatibility */
         flex-direction: row-reverse;
     }
 
     findbar > .findbar-container {
-        -moz-box-direction: reverse; /* Fx <112 compatibility */
         flex-direction: row-reverse;
         border-inline-width: 1px 0;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 4px;
     }
 
+    /*
+    Move findbar so it isn't over the scrollbar
+    Delete if you want findbar to begin from right window edge
+    */
     findbar {
         margin-right: 16px;
         border-right: 1px solid var(--chrome-content-separator-color);
