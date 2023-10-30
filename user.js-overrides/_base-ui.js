@@ -40,6 +40,7 @@ user_pref("browser.tabs.insertAfterCurrent", true);
 
 // disable "Firefox View" tab
 user_pref("browser.tabs.firefox-view", false);
+user_pref("browser.tabs.firefox-view-next", false);
 
 // clear default top sites
 user_pref("browser.topsites.contile.enabled", false);
