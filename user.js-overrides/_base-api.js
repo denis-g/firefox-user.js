@@ -14,7 +14,6 @@ user_pref("dom.enable_web_task_scheduling", true);
 
 // disable Web Notifications
 user_pref("dom.webnotifications.enabled", false);
-user_pref("dom.webnotifications.serviceworker.enabled", false);
 
 // disable Push API
 user_pref("dom.push.enabled", false);
