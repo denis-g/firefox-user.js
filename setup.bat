@@ -1,14 +1,13 @@
 @echo off
 setlocal disabledelayedexpansion
 
-rem # Personal Firefox settings. Based by arkenfox/user.js
-rem # by Denis G. (https://github.com/denis-g/firefox-user.js)
+rem # Firefox user.js by Denis G.
+rem # https://github.com/denis-g/firefox-user.js
 
 rem # config
 title Personal Firefox settings
 set root=%~dp0
 set root=%root:~0,-1%
-set TMP=%root%\temp
 set config=%root%\config.ini
 
 setlocal enabledelayedexpansion
@@ -28,28 +27,26 @@ if not exist %FIREFOX_PROFILE% (
 )
 
 rem # cleaner
-rd /s /q "%TMP%\" >nul 2>&1
 rd /s /q "%FIREFOX_PROFILE%\chrome\" >nul 2>&1
 
-rem # download actual arkenfox/user.js main files
-mkdir "%TMP%"
-
-powershell -c "Invoke-WebRequest 'https://raw.githubusercontent.com/arkenfox/user.js/master/updater.bat' -OutFile '%TMP%\updater.bat'"
+powershell -c "Invoke-WebRequest 'https://raw.githubusercontent.com/arkenfox/user.js/master/updater.bat' -OutFile '%FIREFOX_PROFILE%\updater.bat'"
 
 rem # copy prefs
-xcopy /i "%root%\user.js-overrides\" "%TMP%\user.js-overrides\" >nul
+xcopy /i "%root%\user-overrides.js" "%FIREFOX_PROFILE%\user-overrides.js" >nul
 
 rem # generate user.js
-cd %TMP% && call updater.bat -multiOverrides -unattended
-
-rem # copy prefs
-copy /y "%TMP%\user.js" "%FIREFOX_PROFILE%\user.js" >nul
+cd %FIREFOX_PROFILE% && call updater.bat >nul
 
 rem # copy styles
 xcopy /i /e "%root%\chrome\" "%FIREFOX_PROFILE%\chrome\" >nul
 
-rem # cleaner
-rd /s /q "%TMP%" >nul 2>&1
+powershell -c "Invoke-WebRequest 'https://raw.githubusercontent.com/arkenfox/user.js/master/prefsCleaner.bat' -OutFile '%FIREFOX_PROFILE%\prefsCleaner.bat'"
+
+rem # clean prefs.js
+cd %FIREFOX_PROFILE% && call prefsCleaner.bat >nul
+
+rem # remove user-overrides.js
+rd /s /q "%FIREFOX_PROFILE%\user-overrides.js" >nul 2>&1
 
 echo Completed!
 pause

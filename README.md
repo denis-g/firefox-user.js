@@ -3,7 +3,7 @@
 <div align="center">
   <p><img src="https://github.com/denis-g/firefox-user.js/blob/master/assets/firefox.svg" alt="Mozilla Firefox" style="width: 40%;" /></p>
   <p>
-    <img src="https://img.shields.io/badge/minimal_version-118-html.svg?style=flat-square&logo=firefoxbrowser&logoColor=FF7139&color=333&longCache=true" alt="Minimal version" />
+    <img src="https://img.shields.io/badge/minimal_version-119-html.svg?style=flat-square&logo=firefoxbrowser&logoColor=FF7139&color=333&longCache=true" alt="Minimal version" />
   </p>
 </div>
 
@@ -12,6 +12,7 @@
 - [user.js](#-userjs)
 - [chrome](#-chrome)
 - [Apply Configuration](#-apply-configuration)
+- [Update](#-update)
 - [Potential Problems](#-potential-problems)
 - [Must-have Addons](#-must-have-addons)
 - [References](#-references)
@@ -23,19 +24,16 @@
 The Firefox `user.js` file stores user settings. This a convenient way to save your browser customizations and apply them on different machines.
 All settings are based on [arkenfox/user.js](https://github.com/arkenfox/user.js) by default and override settings for sites to **normal work**.
 
-### user.js-overrides/_base-*.js
+### user-overrides.js
 
 - Disabled Firefox Accounts & Sync, built-in extensions
 - Basically settings for security and **usable** in daily use
 - Allow cross-logins, basic cookie policy
 - Enabled saving session, keep logins and site data
-- Disabled unused Web API's and preset for permissions
+- Disabled unused Web APIs and preset for permissions
 - UI/UX settings
-
-### user.js-overrides/_personal.js
-
 - Locale settings
-- Newtab page, tabs, bookmarks configuration
+- New Tab page, tabs, findbar, bookmarks configuration
 - Enabled "Dark Mode" for all components
 
 ## 🔹 chrome
@@ -132,6 +130,15 @@ FIREFOX_PROFILE="C:\Users\denis-g\AppData\Roaming\Mozilla\Firefox\Profiles\dfk39
 </details>
 
 **3**. ...and run main script `setup.bat`.
+
+---
+
+## 🔹 Update
+
+- Close Firefox
+- Execute `setup.sh` or `setup.bat` script, like as above
+- Run Firefox
+- On `about:config` page execute the [cleanup script](https://github.com/arkenfox/user.js/blob/master/scratchpad-scripts/arkenfox-cleanup.js)
 
 ---
 

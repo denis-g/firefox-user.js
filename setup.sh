@@ -1,11 +1,10 @@
 #!/bin/bash
 export LC_ALL=en_US.UTF-8
 
-# Personal Firefox settings. Based by arkenfox/user.js
-# by Denis G. (https://github.com/denis-g/firefox-user.js)
+# Firefox user.js by Denis G.
+# https://github.com/denis-g/firefox-user.js
 
 # config
-TMP="./temp"
 source ./config.ini
 
 if [ -z "$FIREFOX_PROFILE" ]; then
@@ -20,25 +19,26 @@ if [ ! -d "$FIREFOX_PROFILE" ]; then
 fi
 
 # cleaner
-rm -rf "${TMP}"
 rm -rf "${FIREFOX_PROFILE}/chrome/"
 
-# download actual arkenfox/user.js main files
-mkdir "${TMP}"
-
-if curl -s -L "https://raw.githubusercontent.com/arkenfox/user.js/master/updater.sh" -o "${TMP}/updater.sh"; then
+if curl -s -L "https://raw.githubusercontent.com/arkenfox/user.js/master/updater.sh" -o "${FIREFOX_PROFILE}/updater.sh"; then
   # generate user.js
-  cp -R ./user.js-overrides/ "${TMP}/user.js-overrides/"
-  sh "${TMP}/updater.sh" -d -s -o "user.js-overrides"
-
-  # copy prefs
-  cp "${TMP}/user.js" "${FIREFOX_PROFILE}"
+  cp ./user-overrides.js "${FIREFOX_PROFILE}/user-overrides.js"
+  sh "${FIREFOX_PROFILE}/updater.sh" -d -s
 
   # copy styles
   cp -R ./chrome/ "${FIREFOX_PROFILE}/chrome/"
 
-  # cleaner
-  rm -rf "${TMP}"
+  if curl -s -L "https://raw.githubusercontent.com/arkenfox/user.js/master/prefsCleaner.sh" -o "${FIREFOX_PROFILE}/prefsCleaner.sh"; then
+    # clean prefs.js
+    sh "${FIREFOX_PROFILE}/prefsCleaner.sh" -d -s
+  else
+    echo "Error! Could not download arkenfox/user.js"
+    exit 2
+  fi
+
+  # remove user-overrides.js
+  rm -rf "${FIREFOX_PROFILE}/user-overrides.js"
 
   echo "Completed!"
   exit 0
