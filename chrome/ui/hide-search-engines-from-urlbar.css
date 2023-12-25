@@ -1,0 +1,14 @@
+/******************************************************************************
+ * Firefox user.js by Denis G.
+ * https://github.com/denis-g/firefox-user.js
+ *
+ * Hide search engines from the search/url bar
+ *
+ * Reference:
+ * https://github.com/mozilla/gecko-dev/blob/master/browser/themes/shared/searchbar.css
+ * https://github.com/datguypiko/Firefox-Mod-Blur/tree/master/EXTRA%20MODS/Search%20Bar%20Mods/Search%20box%20-%20No%20search%20engine%20buttons/no_search_engines_in_url_bar.css
+ *****************************************************************************/
+
+.search-one-offs:not([hidden]) {
+    display: none !important;
+}

@@ -1,0 +1,19 @@
+/******************************************************************************
+ * Firefox user.js by Denis G.
+ * https://github.com/denis-g/firefox-user.js
+ *
+ * Reduce space for tabs
+ *
+ * Reference:
+ * https://github.com/mozilla/gecko-dev/blob/master/browser/themes/shared/tabs.css
+ *****************************************************************************/
+
+.titlebar-spacer {
+    &[type="pre-tabs"] {
+        width: 10px !important;
+    }
+
+    &[type="post-tabs"] {
+        display: none !important;
+    }
+}

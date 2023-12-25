@@ -1,0 +1,66 @@
+/******************************************************************************
+ * Firefox user.js by Denis G.
+ * https://github.com/denis-g/firefox-user.js
+ *
+ * Auto-hide bookmarks toolbar
+ *
+ * Reference:
+ * https://github.com/mozilla/gecko-dev/blob/master/browser/themes/shared/toolbarbuttons.css
+ * https://github.com/datguypiko/Firefox-Mod-Blur/blob/master/EXTRA%20MODS/Auto%20hide%20Mods/Popout%20bookmarks%20bar/popout_bookmarks_bar_on_hover.css
+ *****************************************************************************/
+
+#PersonalToolbar {
+    --uc-bm-height: 24px;
+    --uc-bm-padding: 6px;
+    padding: 1px var(--uc-bm-padding) !important;
+    position: relative !important;
+
+    :root[uidensity="touch"] & {
+        --uc-bm-padding: 6px;
+    }
+
+    &:not([customizing]) {
+        margin-bottom: calc(2px - var(--uc-bm-height) - 2 * var(--uc-bm-padding)) !important;
+        transform: rotateX(90deg) !important;
+        transform-origin: top !important;
+        transition: transform 50ms linear 500ms !important;
+        z-index: 2 !important;
+    }
+}
+
+#PlacesToolbarItems {
+    > .bookmark-item {
+        padding-block: var(--uc-bm-padding) !important;
+        padding-left: var(--uc-bm-padding) !important;
+        padding-right: var(--uc-bm-padding) !important;
+
+        .toolbarbutton-icon {
+            transition: opacity 100ms linear 450ms !important;
+            opacity: 0 !important;
+        }
+    }
+}
+
+/* Show when cursor is over the toolbar area */
+#navigator-toolbox:hover > #PersonalToolbar {
+    transition-delay: 100ms !important;
+    transform: rotateX(0) !important;
+}
+
+#PlacesToolbarItems > .bookmark-item .toolbarbutton-text {
+    transition: opacity 100ms linear 450ms !important;
+    opacity: 0 !important;
+}
+
+#navigator-toolbox:hover #PlacesToolbarItems > .bookmark-item {
+    .toolbarbutton-icon,
+    .toolbarbutton-text {
+        transition-delay: 100ms !important;
+        opacity: 1 !important;
+    }
+}
+
+#personal-toolbar-empty {
+    /* Fix the white line above the bookmarks bar when it's empty */
+    padding: 2px !important;
+}

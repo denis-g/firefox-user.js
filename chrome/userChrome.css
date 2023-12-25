@@ -3,9 +3,11 @@
  * https://github.com/denis-g/firefox-user.js
  *****************************************************************************/
 
-@import 'ui/auto-hide-bookmarks-toolbar.css';
-@import 'ui/close-tab-button-shown-on-hover.css';
+@import 'ui/added-icon-for-soundplaying-tab.css';
+@import 'ui/autohide-bookmarks-toolbar.css';
 @import 'ui/floating-findbar-on-top.css';
-@import 'ui/hide-on-urlbar-this-time.css';
+@import 'ui/hide-alltabs-button.css';
+@import 'ui/hide-search-engines-from-urlbar.css';
 @import 'ui/iconized-main-menu.css';
-@import 'ui/more-space-for-tabs.css';
+@import 'ui/reduce-space-for-tabs.css';
+@import 'ui/show-tab-close-button-on-hover.css';

@@ -1,0 +1,66 @@
+/******************************************************************************
+ * Firefox user.js by Denis G.
+ * https://github.com/denis-g/firefox-user.js
+ *
+ * Added icon for sound-playing tab
+ *
+ * Reference:
+ * https://github.com/mozilla/gecko-dev/blob/master/browser/themes/shared/tabs.css
+ * https://github.com/datguypiko/Firefox-Mod-Blur/blob/master/EXTRA%20MODS/Tabs%20Bar%20Mods/Colored%20sound%20playing%20tab/colored_soundplaying_tab.css
+ *****************************************************************************/
+
+:root {
+    --tab-soundplaying-bgcolor: var(--lwt-toolbarbutton-icon-fill-attention, --in-content-item-selected);
+}
+
+.tabbrowser-tab {
+    &:is([soundplaying]) > .tab-stack > .tab-background {
+        display: flex;
+        justify-content: flex-end;
+
+        &::after {
+            padding-bottom: 4.5px;
+            color: var(--tab-soundplaying-bgcolor);
+            font-family: monospace;
+            font-size: 4px;
+            line-height: 1;
+            letter-spacing: 2px;
+            content: '▃▅▇';
+            animation: tabSoundplayingAnimation 1s infinite ease;
+        }
+    }
+
+    &:is([soundplaying]):is([pinned]) > .tab-stack > .tab-background {
+        align-items: center;
+    }
+
+    &:is([soundplaying]):not([pinned]) > .tab-stack > .tab-background {
+        &::after {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    @keyframes tabSoundplayingAnimation {
+        0% {
+            content: '▃▅▇';
+        }
+        16.6% {
+            content: '▅▇▅';
+        }
+        33.2% {
+            content: '▇▅▃';
+        }
+        49.8% {
+            content: '▅▃▃';
+        }
+        66.4% {
+            content: '▅▃▅';
+        }
+        100% {
+            content: '▃▅▇';
+        }
+    }
+}

@@ -13,8 +13,6 @@ user_pref("_user.js.status-log", "user.js -- error");
 
 // disable Firefox Account
 user_pref("identity.fxaccounts.enabled", false);
-// disable Firefox View
-user_pref("browser.tabs.firefox-view", false);
 
 
 /******************************************************************************
@@ -266,36 +264,39 @@ user_pref("browser.promo.pin.enabled", false);
 
 
 /******************************************************************************
+ * Styles
+ *****************************************************************************/
+
+// allow userChrome.css and userContent.css
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+// bookmarks settings
+// for correct styles `chrome/ui/auto-hide-bookmarks-toolbar.css`
+user_pref("browser.toolbars.bookmarks.visibility", "always");
+
+
+/******************************************************************************
  * Personal
  *****************************************************************************/
 
 // set preferred language for displaying pages
 user_pref("intl.accept_languages", "en-US, en, ru-RU, ru");
 // force "Dark Mode"
-user_pref("layout.css.prefers-color-scheme.content-override", 0);
-user_pref("ui.systemUsesDarkTheme", 1);
-user_pref("devtools.theme", "dark");
-user_pref("reader.color_scheme", "dark");
+//user_pref("layout.css.prefers-color-scheme.content-override", 0);
+//user_pref("ui.systemUsesDarkTheme", 1);
+//user_pref("devtools.theme", "dark");
+//user_pref("reader.color_scheme", "dark");
 // fix icons for extensions on Dark Mode
 user_pref("svg.context-properties.content.enabled", true);
 // default new tab page
 user_pref("browser.newtabpage.enabled", true);
 user_pref("browser.startup.homepage", "about:home");
 user_pref("browser.newtabpage.activity-stream.topSitesRows", 3);
-// download settings
-//user_pref("browser.download.dir", "");     // set your directory
-//user_pref("browser.download.lastDir", ""); // set your directory
+// set Download path
+//user_pref("browser.download.dir", "");
+//user_pref("browser.download.lastDir", "");
 // reader settings
 user_pref("reader.font_type", "serif");
 user_pref("reader.content_width", 7);
-// allow userChrome.css/userContent.css
-user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
-// bookmarks settings
-// for correct styles `chrome/ui/auto-hide-bookmarks-toolbar.css`
-user_pref("browser.toolbars.bookmarks.visibility", "always");
-// findbar settings
-// `chrome/ui/floating-findbar-on-top.css`
-user_pref("userchrome.floating-findbar-on-right.enabled", true);
 
 
 // status for settings apply
