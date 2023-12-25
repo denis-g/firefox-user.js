@@ -1,10 +1,13 @@
 # Firefox user.js 
 
 <div align="center">
-  <p><img src="https://github.com/denis-g/firefox-user.js/blob/master/assets/firefox-preview.png" alt="Firefox Preview" style="width: 100%;" /></p>
-  <p>
-    <img src="https://img.shields.io/badge/minimal_version-120-html.svg?style=flat-square&logo=firefoxbrowser&logoColor=FF7139&color=333&longCache=true" alt="Minimal version" />
-  </p>
+    <div>
+        <img src="https://img.shields.io/badge/Last_tested_Firefox-120-html.svg?style=flat-square&logo=firefoxbrowser&logoColor=FF7139&color=333&longCache=true" alt="Last tested Firefox" />
+        <img src="https://img.shields.io/badge/Updated-2023/12/08-html.svg?style=flat-square&color=333&longCache=true" alt="Updated Date" />
+    </div>
+    <div>
+      <img src="https://github.com/denis-g/firefox-user.js/blob/master/assets/firefox-preview.png" alt="Firefox Preview" style="width: 100%;" />
+    </div>
 </div>
 
 ---
@@ -165,6 +168,7 @@ FIREFOX_PROFILE="C:\Users\denis-g\AppData\Roaming\Mozilla\Firefox\Profiles\dfk39
 - [Betterfox](https://github.com/yokoffing/Betterfox)
 - [Firefox Mod Blur](https://github.com/datguypiko/Firefox-Mod-Blur)
 - [firefox-csshacks](https://github.com/MrOtherGuy/firefox-csshacks)
+- [Gecko Dev](https://github.com/mozilla/gecko-dev/)
 - [firefox.js](https://searchfox.org/mozilla-central/source/browser/app/profile/firefox.js)
 
 ---
