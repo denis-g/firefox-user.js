@@ -52,6 +52,10 @@
     opacity: 0 !important;
 }
 
+:root[BookmarksToolbarOverlapsBrowser] #PersonalToolbar:not([customizing]) {
+    margin-bottom: calc(-1 * var(--bookmarks-toolbar-overlapping-browser-height)) !important;
+}
+
 #navigator-toolbox:hover #PlacesToolbarItems > .bookmark-item {
     .toolbarbutton-icon,
     .toolbarbutton-text {

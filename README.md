@@ -2,8 +2,8 @@
 
 <div align="center">
     <div>
-        <img src="https://img.shields.io/badge/Last_tested_Firefox-120-html.svg?style=flat-square&logo=firefoxbrowser&logoColor=FF7139&color=333&longCache=true" alt="Last tested Firefox" />
-        <img src="https://img.shields.io/badge/Updated-2023/12/08-html.svg?style=flat-square&color=333&longCache=true" alt="Updated Date" />
+        <img src="https://img.shields.io/badge/Last_tested_Firefox-122-html.svg?style=flat-square&logo=firefoxbrowser&logoColor=FF7139&color=333&longCache=true" alt="Last tested Firefox" />
+        <img src="https://img.shields.io/badge/Updated-2024/02/04-html.svg?style=flat-square&color=333&longCache=true" alt="Updated Date" />
     </div>
     <div>
       <img src="https://github.com/denis-g/firefox-user.js/blob/master/assets/firefox-preview.png" alt="Firefox Preview" style="width: 100%;" />
@@ -45,7 +45,7 @@ A `userChrome.css` file affects the browser's UI, and `userContent.css` file aff
 
 ### chrome/userChrome.css
 
-- Added icon for sound-playing tab (animation)
+- Added icon for sound-playing tab (animated)
 - Auto-hide bookmarks toolbar
 - Floating findbar on top
 - Hide "All Tabs" button
@@ -170,7 +170,3 @@ FIREFOX_PROFILE="C:\Users\denis-g\AppData\Roaming\Mozilla\Firefox\Profiles\dfk39
 - [firefox-csshacks](https://github.com/MrOtherGuy/firefox-csshacks)
 - [Gecko Dev](https://github.com/mozilla/gecko-dev/)
 - [firefox.js](https://searchfox.org/mozilla-central/source/browser/app/profile/firefox.js)
-
----
-
-<sub>Mozilla Firefox logo created by [Mozilla Foundation](https://mozilla.design/). All rights reserved.</sub>

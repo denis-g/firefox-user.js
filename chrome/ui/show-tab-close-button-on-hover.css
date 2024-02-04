@@ -21,8 +21,7 @@
             opacity: 1;
             visibility: visible !important;
             border-radius: 100% !important;
-            transition: opacity 0.25s ease, visibility 0.25s ease,
-            background-color 0.15s ease !important;
+            transition: opacity 0.25s ease, visibility 0.25s ease, background-color 0.15s ease !important;
         }
     }
 }
