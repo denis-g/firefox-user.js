@@ -5,13 +5,9 @@
  * Added icon for sound-playing tab
  *
  * Reference:
- * https://github.com/mozilla/gecko-dev/blob/master/browser/themes/shared/tabs.css
+ * https://github.com/mozilla/gecko-dev/blob/master/browser/themes/shared/tabbrowser/tabs.css
  * https://github.com/datguypiko/Firefox-Mod-Blur/blob/master/EXTRA%20MODS/Tabs%20Bar%20Mods/Colored%20sound%20playing%20tab/colored_soundplaying_tab.css
  *****************************************************************************/
-
-:root {
-    --tab-soundplaying-bgcolor: var(--lwt-toolbarbutton-icon-fill-attention, --in-content-item-selected);
-}
 
 .tabbrowser-tab {
     &:is([soundplaying]) > .tab-stack > .tab-background {
@@ -20,7 +16,7 @@
 
         &::after {
             padding-bottom: 4.5px;
-            color: var(--tab-soundplaying-bgcolor);
+            color: var(--lwt-toolbarbutton-icon-fill-attention, --in-content-item-selected);
             font-family: monospace;
             font-size: 4px;
             line-height: 1;

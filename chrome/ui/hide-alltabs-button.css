@@ -5,10 +5,10 @@
  * Hide "All Tabs" button
  *
  * Reference:
- * https://github.com/mozilla/gecko-dev/blob/master/browser/themes/shared/tabs.css
+ * https://github.com/mozilla/gecko-dev/blob/master/browser/themes/shared/tabbrowser/tabs.css
  * https://github.com/datguypiko/Firefox-Mod-Blur/blob/master/EXTRA%20MODS/Icon%20and%20Button%20Mods/Hide%20list-all-tabs%20button/hide_list-all-tabs_button.css
  *****************************************************************************/
 
-#tabbrowser-tabs:not([overflow="true"]) ~ #alltabs-button {
+#tabbrowser-tabs:not([overflow]) ~ #alltabs-button {
     display: none !important;
 }

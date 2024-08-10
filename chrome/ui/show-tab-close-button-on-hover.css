@@ -5,19 +5,19 @@
  * Show tab close button on hover
  *
  * Reference:
- * https://github.com/mozilla/gecko-dev/blob/master/browser/themes/shared/tabs.css
+ * https://github.com/mozilla/gecko-dev/blob/master/browser/themes/shared/tabbrowser/tabs.css
  * https://github.com/datguypiko/Firefox-Mod-Blur/blob/master/userChrome.css
  *****************************************************************************/
 
 .tabbrowser-tab:not([pinned]) {
-    > .tab-stack > .tab-content > .tab-close-button {
+    .tab-close-button {
         display: flex !important;
         opacity: 0;
         visibility: collapse !important;
     }
 
     &:hover {
-        > .tab-stack > .tab-content > .tab-close-button {
+        .tab-close-button {
             opacity: 1;
             visibility: visible !important;
             border-radius: 100% !important;

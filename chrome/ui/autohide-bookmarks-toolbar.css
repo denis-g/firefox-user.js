@@ -16,7 +16,7 @@
     position: relative !important;
 
     :root[uidensity="touch"] & {
-        --uc-bm-padding: 6px;
+        --uc-bm-padding: var(--uc-bm-padding);
     }
 
     &:not([customizing]) {
@@ -26,6 +26,10 @@
         transition: transform 50ms linear 500ms !important;
         z-index: 2 !important;
     }
+}
+
+:root[BookmarksToolbarOverlapsBrowser] #PersonalToolbar:not([customizing]) {
+    margin-bottom: calc(-1 * var(--bookmarks-toolbar-overlapping-browser-height)) !important;
 }
 
 #PlacesToolbarItems {
@@ -52,12 +56,7 @@
     opacity: 0 !important;
 }
 
-:root[BookmarksToolbarOverlapsBrowser] #PersonalToolbar:not([customizing]) {
-    margin-bottom: calc(-1 * var(--bookmarks-toolbar-overlapping-browser-height)) !important;
-}
-
 #navigator-toolbox:hover #PlacesToolbarItems > .bookmark-item {
-    .toolbarbutton-icon,
     .toolbarbutton-text {
         transition-delay: 100ms !important;
         opacity: 1 !important;

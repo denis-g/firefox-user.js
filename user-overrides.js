@@ -8,11 +8,54 @@ user_pref("_user.js.status-log", "user.js -- error");
 
 
 /******************************************************************************
+ * Fastfox
+ * https://github.com/yokoffing/Betterfox/blob/main/Fastfox.js
+ *****************************************************************************/
+
+// notification interval (in microseconds) to avoid layout thrashing
+user_pref("content.notify.interval", 100000);
+// GPU-accelerated Canvas2D
+user_pref("gfx.canvas.accelerated.cache-items", 4096);
+user_pref("gfx.canvas.accelerated.cache-size", 512);
+user_pref("gfx.content.skia-font-cache-size", 20);
+// compression level for cached JavaScript bytecode
+user_pref("browser.cache.jsbc_compression_level", 3);
+// media memory cache
+user_pref("media.memory_cache_max_size", 65536);
+// adjust video buffering periods when not using MSE
+user_pref("media.cache_readahead_limit", 7200);
+user_pref("media.cache_resume_threshold", 3600);
+// image cache
+user_pref("image.mem.decode_bytes_at_a_time", 32768);
+// increase the absolute number of HTTP connections
+user_pref("network.http.max-connections", 1800);
+user_pref("network.http.max-persistent-connections-per-server", 10);
+user_pref("network.http.max-urgent-start-excessive-connections-per-host", 5);
+// pacing requests
+user_pref("network.http.pacing.requests.enabled", false);
+// adjust DNS expiration time
+user_pref("network.dnsCacheExpiration", 3600);
+// the number of threads for DNS
+user_pref("network.dns.max_high_priority_threads", 8);
+// increase TLS token caching
+user_pref("network.ssl_tokens_cache_capacity", 10240);
+// DNS prefetching
+user_pref("network.dns.disablePrefetch", true);
+user_pref("network.dns.disablePrefetchFromHTTPS", true);
+// link prefetching
+user_pref("network.prefetch-next", false);
+// Network Predictor
+user_pref("network.predictor.enabled", false);
+
+
+/******************************************************************************
  * Firefox Account
  *****************************************************************************/
 
 // disable Firefox Account
 user_pref("identity.fxaccounts.enabled", false);
+user_pref("identity.fxaccounts.toolbar.enabled", false);
+user_pref("identity.fxaccounts.commands.enabled", false);
 
 
 /******************************************************************************
@@ -50,6 +93,8 @@ user_pref("extensions.formautofill.creditCards.enabled", false);
 // disable devtools news
 user_pref("devtools.whatsnew.enabled", false);
 user_pref("devtools.whatsnew.feature-enabled", false);
+// devtools position
+user_pref("devtools.toolbox.host", "bottom");
 // disable cache when devtools open
 user_pref("devtools.cache.disabled", true);
 // enable user agent style inspection in rule-view
@@ -93,7 +138,12 @@ user_pref("mathml.disabled", true);
  * Network
  *****************************************************************************/
 
+// disable DNS IPv6 support
 user_pref("network.dns.disableIPv6", true);
+// disable DNS cache
+user_pref("network.dnsCacheEntries", 0);
+user_pref("network.dnsCacheExpiration", 0);
+user_pref("network.dnsCacheExpirationGracePeriod", 0);
 
 
 /******************************************************************************
@@ -172,49 +222,6 @@ user_pref("privacy.sanitize.sanitizeOnShutdown", false);
 
 
 /******************************************************************************
- * Fastfox
- * https://github.com/yokoffing/Betterfox/blob/main/Fastfox.js
- *****************************************************************************/
-
-// notification interval (in microseconds) to avoid layout thrashing
-user_pref("content.notify.interval", 100000);
-// GPU-accelerated Canvas2D
-user_pref("gfx.canvas.accelerated.cache-items", 4096);
-user_pref("gfx.canvas.accelerated.cache-size", 512);
-user_pref("gfx.content.skia-font-cache-size", 20);
-// compression level for cached JavaScript bytecode
-user_pref("browser.cache.jsbc_compression_level", 3);
-// media memory cache
-//user_pref("media.memory_cache_max_size", 65536); // already on arkenfox.js
-// adjust video buffering periods when not using MSE
-user_pref("media.cache_readahead_limit", 7200);
-user_pref("media.cache_resume_threshold", 3600);
-// image cache
-user_pref("image.mem.decode_bytes_at_a_time", 32768);
-// use bigger packets
-user_pref("network.buffer.cache.size", 262144);
-user_pref("network.buffer.cache.count", 128);
-// increase the absolute number of HTTP connections
-user_pref("network.http.max-connections", 1800);
-user_pref("network.http.max-persistent-connections-per-server", 10);
-user_pref("network.http.max-urgent-start-excessive-connections-per-host", 5);
-// pacing requests
-user_pref("network.http.pacing.requests.enabled", false);
-// adjust DNS expiration time
-user_pref("network.dnsCacheExpiration", 3600);
-// the number of threads for DNS
-user_pref("network.dns.max_high_priority_threads", 8);
-// increase TLS token caching
-user_pref("network.ssl_tokens_cache_capacity", 10240);
-// DNS prefetching
-//user_pref("network.dns.disablePrefetch", true); // already on arkenfox/user.js
-// link prefetching
-//user_pref("network.prefetch-next", false); // already on arkenfox/user.js
-// Network Predictor
-//user_pref("network.predictor.enabled", false); // already on arkenfox/user.js
-
-
-/******************************************************************************
  * UI And UX
  *****************************************************************************/
 
@@ -242,6 +249,8 @@ user_pref("browser.tabs.insertAfterCurrent", true);
 // disable "Firefox View" tab
 user_pref("browser.tabs.firefox-view", false);
 user_pref("browser.tabs.firefox-view-next", false);
+user_pref("browser.tabs.firefox-view-newIcon", false);
+user_pref("browser.firefox-view.feature-tour", "{\"screen\":\"\",\"complete\":true}");
 // clear default top sites
 user_pref("browser.topsites.contile.enabled", false);
 user_pref("browser.topsites.useRemoteSetting", false);
@@ -264,6 +273,19 @@ user_pref("browser.promo.pin.enabled", false);
 
 
 /******************************************************************************
+ * Dark Mode
+ *****************************************************************************/
+
+// force dark mode for sites on all browser components
+//user_pref("layout.css.prefers-color-scheme.content-override", 0);
+//user_pref("ui.systemUsesDarkTheme", 1);
+//user_pref("devtools.theme", "dark");
+//user_pref("reader.color_scheme", "dark");
+// fix svg icons for extensions on Dark Mode
+user_pref("svg.context-properties.content.enabled", true);
+
+
+/******************************************************************************
  * Styles
  *****************************************************************************/
 
@@ -280,17 +302,11 @@ user_pref("browser.toolbars.bookmarks.visibility", "always");
 
 // set preferred language for displaying pages
 user_pref("intl.accept_languages", "en-US, en, ru-RU, ru");
-// force "Dark Mode"
-//user_pref("layout.css.prefers-color-scheme.content-override", 0);
-//user_pref("ui.systemUsesDarkTheme", 1);
-//user_pref("devtools.theme", "dark");
-//user_pref("reader.color_scheme", "dark");
-// fix icons for extensions on Dark Mode
-user_pref("svg.context-properties.content.enabled", true);
 // default new tab page
 user_pref("browser.newtabpage.enabled", true);
 user_pref("browser.startup.homepage", "about:home");
 user_pref("browser.newtabpage.activity-stream.topSitesRows", 3);
+user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 // set Download path
 //user_pref("browser.download.dir", "");
 //user_pref("browser.download.lastDir", "");

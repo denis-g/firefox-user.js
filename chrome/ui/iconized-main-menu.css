@@ -96,13 +96,14 @@
     background-image: var(--avatar-image-url);
 }
 
-#appMenu-protonMainView > .panel-subview-body::after {
+#appMenu-protonMainView > .panel-subview-body::after,
+#appMenu-mainView > .panel-subview-body::after {
     content: '';
     display: flex;
     border-bottom: 1px solid var(--panel-separator-color);
     margin: var(--panel-separator-margin);
 }
 
-#appMenu-find-button2 ~ * {
+#appMenu-translate-button ~ * {
     order: 2;
 }
