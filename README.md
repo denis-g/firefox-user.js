@@ -46,7 +46,6 @@ A `userChrome.css` file affects the browser's UI, and `userContent.css` file aff
 ### chrome/userChrome.css
 
 - Added icon for sound-playing tab (animated)
-- Auto-hide bookmarks toolbar
 - Hide "All Tabs" button
 - Hide search engines from the search/url bar
 - Iconized main menu

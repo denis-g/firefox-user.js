@@ -292,7 +292,6 @@ user_pref("svg.context-properties.content.enabled", true);
 // allow userChrome.css and userContent.css
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 // bookmarks settings
-// for correct styles `chrome/ui/auto-hide-bookmarks-toolbar.css`
 user_pref("browser.toolbars.bookmarks.visibility", "always");
 
 
