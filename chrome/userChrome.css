@@ -4,8 +4,9 @@
  *****************************************************************************/
 
 @import 'ui/added-icon-for-soundplaying-tab.css';
+@import 'ui/reduce-space-for-tabs.css';
+@import 'ui/hide-firefox-view-button.css';
 @import 'ui/hide-alltabs-button.css';
+@import 'ui/show-tab-close-button-on-hover.css';
 @import 'ui/hide-search-engines-from-urlbar.css';
 @import 'ui/iconized-main-menu.css';
-@import 'ui/reduce-space-for-tabs.css';
-@import 'ui/show-tab-close-button-on-hover.css';

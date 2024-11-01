@@ -301,6 +301,13 @@ user_pref("browser.toolbars.bookmarks.visibility", "always");
 
 // set preferred language for displaying pages
 user_pref("intl.accept_languages", "en-US, en, ru-RU, ru");
+// translations
+user_pref("browser.translations.neverTranslateLanguages", "ru");
+user_pref("browser.translations.mostRecentTargetLanguages", "ru");
+// disable "Use my location"
+user_pref("geo.enabled", false);
+// disable "Use my location"
+user_pref("geo.provider
 // default new tab page
 user_pref("browser.newtabpage.enabled", true);
 user_pref("browser.startup.homepage", "about:home");

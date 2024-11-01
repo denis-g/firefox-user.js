@@ -2,8 +2,8 @@
 
 <div align="center">
     <div>
-        <img src="https://img.shields.io/badge/Last_tested_Firefox-128-html.svg?style=flat-square&logo=firefoxbrowser&logoColor=FF7139&color=333&longCache=true" alt="Last tested Firefox" />
-        <img src="https://img.shields.io/badge/Updated-2024/08/10-html.svg?style=flat-square&color=333&longCache=true" alt="Updated Date" />
+        <img src="https://img.shields.io/badge/Last_tested_Firefox-132-html.svg?style=flat-square&logo=firefoxbrowser&logoColor=FF7139&color=333&longCache=true" alt="Last tested Firefox" />
+        <img src="https://img.shields.io/badge/Updated-2024/11/01-html.svg?style=flat-square&color=333&longCache=true" alt="Updated Date" />
     </div>  
     <div>
       <img src="https://github.com/denis-g/firefox-user.js/blob/master/assets/firefox-preview.png" alt="Firefox Preview" style="width: 100%;" />
@@ -141,7 +141,7 @@ FIREFOX_PROFILE="C:\Users\denis-g\AppData\Roaming\Mozilla\Firefox\Profiles\dfk39
 - Close Firefox
 - Execute `setup.sh` or `setup.bat` script, like as above
 - Run Firefox
-- On `about:config` page execute the [cleanup script](https://github.com/arkenfox/user.js/blob/master/scratchpad-scripts/arkenfox-cleanup.js)
+- On `about:config` page execute the [cleanup script](https://raw.githubusercontent.com/arkenfox/user.js/refs/heads/master/scratchpad-scripts/arkenfox-cleanup.js)
 
 ---
 
