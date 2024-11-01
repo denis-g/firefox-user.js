@@ -306,8 +306,6 @@ user_pref("browser.translations.neverTranslateLanguages", "ru");
 user_pref("browser.translations.mostRecentTargetLanguages", "ru");
 // disable "Use my location"
 user_pref("geo.enabled", false);
-// disable "Use my location"
-user_pref("geo.provider
 // default new tab page
 user_pref("browser.newtabpage.enabled", true);
 user_pref("browser.startup.homepage", "about:home");
