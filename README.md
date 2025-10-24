@@ -2,8 +2,8 @@
 
 <div align="center">
     <div>
-        <img src="https://img.shields.io/badge/Last_tested_Firefox-132-html.svg?style=flat-square&logo=firefoxbrowser&logoColor=FF7139&color=333&longCache=true" alt="Last tested Firefox" />
-        <img src="https://img.shields.io/badge/Updated-2024/11/01-html.svg?style=flat-square&color=333&longCache=true" alt="Updated Date" />
+        <img src="https://img.shields.io/badge/Last_tested_Firefox-144-html.svg?style=flat-square&logo=firefoxbrowser&logoColor=FF7139&color=333&longCache=true" alt="Last tested Firefox" />
+        <img src="https://img.shields.io/badge/Updated-2025/08/16-html.svg?style=flat-square&color=333&longCache=true" alt="Updated Date" />
     </div>  
     <div>
       <img src="https://github.com/denis-g/firefox-user.js/blob/master/assets/firefox-preview.png" alt="Firefox Preview" style="width: 100%;" />
@@ -48,7 +48,6 @@ A `userChrome.css` file affects the browser's UI, and `userContent.css` file aff
 - Added icon for sound-playing tab (animated)
 - Hide "All Tabs" button
 - Hide search engines from the search/url bar
-- Iconized main menu
 - Reduce space for tabs
 - Show tab close button on hover
 
@@ -163,6 +162,7 @@ FIREFOX_PROFILE="C:\Users\denis-g\AppData\Roaming\Mozilla\Firefox\Profiles\dfk39
 ## 🔹 References
 
 - [arkenfox/user.js](https://github.com/arkenfox/user.js)
+- [pyllyukko/user.js](https://github.com/pyllyukko/user.js)
 - [Betterfox](https://github.com/yokoffing/Betterfox)
 - [Firefox Mod Blur](https://github.com/datguypiko/Firefox-Mod-Blur)
 - [firefox-csshacks](https://github.com/MrOtherGuy/firefox-csshacks)

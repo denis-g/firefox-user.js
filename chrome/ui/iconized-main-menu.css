@@ -10,7 +10,7 @@
 
 #appMenu-zoom-controls::before,
 #appMenu-fxa-status2[fxastatus] > toolbarbutton::before,
-#appMenu-protonMainView > .panel-subview-body > toolbarbutton > image {
+:where(#appMenu-mainView) > .panel-subview-body > .subviewbutton > .toolbarbutton-icon {
     fill: currentColor;
     -moz-context-properties: fill;
     margin-inline: 0 8px !important;
@@ -76,12 +76,21 @@
     list-style-image: url('chrome://global/skin/icons/developer.svg');
 }
 
+#appMenu-report-broken-site-button {
+    list-style-image: url('chrome://global/skin/icons/warning.svg');
+}
+
 #appMenu-help-button2 {
     list-style-image: url('chrome://global/skin/icons/info.svg');
 }
 
 #appMenu-quit-button2 {
     list-style-image: url('chrome://devtools/skin/images/search-clear.svg');
+
+    & > .toolbarbutton-icon {
+        stroke: transparent;
+        -moz-context-properties: fill, stroke;
+    }
 }
 
 #appMenu-translate-button {
@@ -96,7 +105,6 @@
     background-image: var(--avatar-image-url);
 }
 
-#appMenu-protonMainView > .panel-subview-body::after,
 #appMenu-mainView > .panel-subview-body::after {
     content: '';
     display: flex;
