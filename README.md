@@ -3,7 +3,7 @@
 <div align="center">
     <div>
         <img src="https://img.shields.io/badge/Last_tested_Firefox-144-html.svg?style=flat-square&logo=firefoxbrowser&logoColor=FF7139&color=333&longCache=true" alt="Last tested Firefox" />
-        <img src="https://img.shields.io/badge/Updated-2025/08/16-html.svg?style=flat-square&color=333&longCache=true" alt="Updated Date" />
+        <img src="https://img.shields.io/badge/Updated-2025/11/26-html.svg?style=flat-square&color=333&longCache=true" alt="Updated Date" />
     </div>  
     <div>
       <img src="https://github.com/denis-g/firefox-user.js/blob/master/assets/firefox-preview.png" alt="Firefox Preview" style="width: 100%;" />
@@ -46,7 +46,7 @@ A `userChrome.css` file affects the browser's UI, and `userContent.css` file aff
 ### chrome/userChrome.css
 
 - Added icon for sound-playing tab (animated)
-- Hide "All Tabs" button
+- Hide unused buttons from Tabs and Toolbars
 - Hide search engines from the search/url bar
 - Reduce space for tabs
 - Show tab close button on hover

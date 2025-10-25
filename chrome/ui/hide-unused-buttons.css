@@ -2,13 +2,21 @@
  * Firefox user.js by Denis G.
  * https://github.com/denis-g/firefox-user.js
  *
- * Hide "All Tabs" button
+ * Hide unused buttons from Tabs and Toolbars
  *
  * Reference:
- * https://github.com/mozilla/gecko-dev/blob/master/browser/themes/shared/tabbrowser/tabs.css
+ * https://github.com/mozilla-firefox/firefox/blob/main/browser/themes/shared/tabbrowser/tabs.css
+ * https://github.com/mozilla-firefox/firefox/blob/main/browser/themes/shared/toolbarbutton-icons.css
  * https://github.com/datguypiko/Firefox-Mod-Blur/blob/master/EXTRA%20MODS/Icon%20and%20Button%20Mods/Hide%20list-all-tabs%20button/hide_list-all-tabs_button.css
  *****************************************************************************/
 
+/* Sidebar */
+#sidebar-button,
+/* Firefox View */
+#firefox-view-button,
+/* Import bookmarks from another browser to Firefox */
+#import-button,
+/* All Tabs */
 #alltabs-button {
     display: none !important;
 }

@@ -7,8 +7,8 @@
 
 @-moz-document url("about:newtab"), url("about:home"), url("about:blank") {
     :root {
-        --newtab-text-primary-color: var(--lwt-sidebar-text-color) !important;
-        --newtab-background-color: var(--lwt-sidebar-background-color) !important;
+        --newtab-text-primary-color: var(--sidebar-text-color) !important;
+        --newtab-background-color: var(--sidebar-background-color) !important;
         --newtab-background-color-secondary: color-mix(in srgb, var(--newtab-background-color) 80%, #000) !important;
     }
 
