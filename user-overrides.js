@@ -13,13 +13,14 @@ user_pref("_user.js.status-log", "user.js -- error");
  *****************************************************************************/
 
 user_pref("gfx.content.skia-font-cache-size", 32);
+user_pref("gfx.webrender.layer-compositor", true);
 user_pref("gfx.canvas.accelerated.cache-items", 32768);
 user_pref("gfx.canvas.accelerated.cache-size", 4096);
 user_pref("webgl.max-size", 16384);
-user_pref("browser.cache.disk.enable", false);
+//user_pref("browser.cache.disk.enable", false);
 user_pref("browser.cache.memory.capacity", 131072);
 user_pref("browser.cache.memory.max_entry_size", 20480);
-user_pref("browser.sessionhistory.max_total_viewers", 4);
+//user_pref("browser.sessionhistory.max_total_viewers", 4);
 //user_pref("browser.sessionstore.max_tabs_undo", 10);
 user_pref("media.memory_cache_max_size", 262144);
 user_pref("media.memory_caches_combined_limit_kb", 1048576);
@@ -296,8 +297,10 @@ user_pref("browser.toolbars.bookmarks.visibility", "always");
 // set preferred language for displaying pages
 user_pref("intl.accept_languages", "en-US, en, ru-RU, ru");
 // translations
+user_pref("browser.translation.neverForLanguages", "ru");
 user_pref("browser.translations.neverTranslateLanguages", "ru");
 user_pref("browser.translations.mostRecentTargetLanguages", "ru");
+user_pref("browser.translations.quickAction.enabled", true);
 // disable "Use my location"
 user_pref("geo.enabled", false);
 // default new tab page
