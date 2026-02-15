@@ -42,7 +42,6 @@ user_pref("network.dns.disablePrefetchFromHTTPS", true);
 user_pref("browser.urlbar.speculativeConnect.enabled", false);
 user_pref("browser.places.speculativeConnect.enabled", false);
 user_pref("network.prefetch-next", false);
-user_pref("network.predictor.enabled", false);
 
 
 /******************************************************************************

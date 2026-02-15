@@ -1,13 +1,11 @@
-# Firefox user.js 
+# Firefox user.js ![firefox-icon] [![no-maintenance-icon]][no-maintenance-url]
+
+[firefox-icon]: https://img.shields.io/badge/Firefox-148+-html.svg?style=flat-square&logo=firefoxbrowser&logoColor=FF7139&color=333&longCache=true
+[no-maintenance-icon]: https://img.shields.io/badge/No%20Maintenance%20Intended-%E2%9C%95-red.svg?style=flat-square&longCache=true
+[no-maintenance-url]: https://unmaintained.tech/
 
 <div align="center">
-    <div>
-        <img src="https://img.shields.io/badge/Last_tested_Firefox-146-html.svg?style=flat-square&logo=firefoxbrowser&logoColor=FF7139&color=333&longCache=true" alt="Last tested Firefox" />
-        <img src="https://img.shields.io/badge/Updated-2026/01/19-html.svg?style=flat-square&color=333&longCache=true" alt="Updated Date" />
-    </div>  
-    <div>
-      <img src="https://github.com/denis-g/firefox-user.js/blob/master/assets/firefox-preview.png" alt="Firefox Preview" style="width: 100%;" />
-    </div>
+  <img src="https://github.com/denis-g/firefox-user.js/blob/master/assets/firefox-preview.png" alt="Firefox user.js Preview" style="width: 100%;" />
 </div>
 
 ---
@@ -24,8 +22,9 @@
 
 ## 🔹 user.js
 
-The Firefox `user.js` file stores user settings. This a convenient way to save your browser customizations and apply them on different machines.
-All settings are based on [arkenfox/user.js](https://github.com/arkenfox/user.js) by default and override settings for sites to **normal work**.
+The Firefox `user.js` file stores user settings.
+This is a convenient way to save your browser customizations and apply them on different machines.
+All settings are based on [arkenfox/user.js](https://github.com/arkenfox/user.js) by default and override settings for sites to work normally.
 
 ### user-overrides.js
 
@@ -49,7 +48,7 @@ A `userChrome.css` file affects the browser's UI, and `userContent.css` file aff
 - Hide unused buttons from Tabs and Toolbars
 - Hide search engines from the search/url bar
 - Reduce space for tabs
-- Show tab close button on hover
+- Shown tab close button on hover
 
 ### chrome/userContent.css
 
@@ -60,12 +59,11 @@ A `userChrome.css` file affects the browser's UI, and `userContent.css` file aff
 
 ## 🔹 Apply Configuration
 
-Better choice - apply script with an empty profile.
-The script generates a new `user.js` configuration file with custom settings and overrides the `user.js` file and `chrome` directory (if they were) into Firefox profile.
+Better choice – apply the script with an empty profile.
+The script generates a new `user.js` configuration file with custom settings and overrides the `user.js` file and `chrome` directory (if they were) into the Firefox profile.
 The file is loaded each time Firefox starts.
 
-You can also change the values or add new ones on configuration files into the `user.js-overrides` directory or added your configuration js-file.
-*Merging files in alphabetical order by default.*
+You can also change the values or add new ones in configuration files in the `user.js-overrides` directory or add your configuration JS-file.
 
 > 🛑 Backup your profile and close Firefox before running the script!
 
@@ -78,7 +76,7 @@ git clone git@github.com:denis-g/firefox-settings.git
 cd firefox-settings
 ```
 
-**2**. Set your Firefox profile path on `FIREFOX_PROFILE` variable inside `config.ini` file.
+**2**. Set your Firefox profile path on the `FIREFOX_PROFILE` variable inside the `config.ini` file.
 
 <details><summary>Example config:</summary>
 
@@ -114,9 +112,9 @@ Expand-Archive "$HOME\Downloads\firefox-settings.zip" -DestinationPath "$HOME\Do
 explorer "$HOME\Downloads\firefox-settings-master"
 ```
 
-This will upload repo into your `Downloads\firefox-settings-master` directory.
+This will upload the repo into your `Downloads\firefox-settings-master` directory.
 
-**2**. Set your Firefox profile path on `FIREFOX_PROFILE` variable inside `config.ini` file.
+**2**. Set your Firefox profile path on the `FIREFOX_PROFILE` variable inside the `config.ini` file.
 
 <details><summary>Example config:</summary>
 
@@ -138,7 +136,7 @@ FIREFOX_PROFILE="C:\Users\denis-g\AppData\Roaming\Mozilla\Firefox\Profiles\dfk39
 ## 🔹 Update
 
 - Close Firefox
-- Execute `setup.sh` or `setup.bat` script, like as above
+- Execute `setup.sh` or `setup.bat` script, as above
 - Run Firefox
 - On `about:config` page execute the [cleanup script](https://raw.githubusercontent.com/arkenfox/user.js/refs/heads/master/scratchpad-scripts/arkenfox-cleanup.js)
 
@@ -146,7 +144,7 @@ FIREFOX_PROFILE="C:\Users\denis-g\AppData\Roaming\Mozilla\Firefox\Profiles\dfk39
 
 ## 🔹 Potential Problems
 
-- By default `push` and web `notifications` is **disabled** - site can't send desktop notifications for Firefox.
+- By default, `push` and `web notifications` are **disabled** – the site can't send desktop notifications for Firefox.
 
 ---
 
